@@ -9,10 +9,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { HomeComponent } from './home/home.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +29,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatIconModule,
     MatSidenavModule,
     MatTooltipModule,
+    MatCardModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
