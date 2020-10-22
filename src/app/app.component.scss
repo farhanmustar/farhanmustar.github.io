@@ -1,3 +1,40 @@
-.example-spacer {
+// Container style
+.app {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.app .app-header {
+  flex: 0 1 auto;
+}
+
+.app .app-content {
   flex: 1 1 auto;
+}
+
+.app .app-footer {
+  flex: 0 1 40px;
+}
+
+// Component style
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.app-drawer {
+  height: 100%;
+}
+
+.app-menu {
+  padding: 5px;
+  min-width: 300px;
+  height: 100%;
 }
