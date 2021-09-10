@@ -3,7 +3,14 @@
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-              <li class="uk-active site-title">{{ title }}</li>
+              <li class="uk-active">
+                <a class="site-title" routerLink="">
+                  <span class="site-initial">{{ title_initial }}</span>
+                  {{ title_first_line }}
+                  <br/>&nbsp;
+                  {{ title_second_line }}
+                </a>
+              </li>
             </ul>
         </div>
         <div class="uk-navbar-right">
@@ -20,7 +27,7 @@
                 </li>
             </ul>
             <ul class="uk-navbar-nav">
-              <a href="" class="site-navbar-text">
+              <a routerLink="info" class="site-navbar-text">
                 <span uk-icon="info"></span>
               </a>
             </ul>

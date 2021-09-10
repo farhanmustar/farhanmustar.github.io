@@ -12,11 +12,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

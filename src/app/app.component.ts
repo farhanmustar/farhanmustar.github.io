@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FARHAN MUSTAR';
+  title_initial = 'F';
+  title_first_line = 'ARHAN';
+  title_second_line = 'MUSTAR';
+  ngOnInit(): void {
+  }
 }
