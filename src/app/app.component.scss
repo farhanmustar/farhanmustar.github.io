@@ -29,16 +29,25 @@
   flex: 1 1 auto;
 }
 
-.app-drawer {
-  height: 100%;
-}
-
-.app-main-menu {
-  height: 100%;
-}
-
 .app .app-content {
   mat-drawer-content {
     padding: 30px 10px;
+  }
+}
+
+.uk-navbar-container {
+  padding: 0px 30px;
+  background-image: linear-gradient(150deg, #7408a6, #f02a62);
+  .site-title {
+    color: white;
+  }
+  .site-navbar-text {
+    color: white;
+    &:hover, &[aria-expanded="true"] {
+      color: #b3b3b3;
+    }
+  }
+  .uk-navbar-nav {
+    margin: 0px 30px;
   }
 }

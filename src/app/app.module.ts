@@ -11,14 +11,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MainMenuComponent
   ],
   imports: [
     BrowserModule,
