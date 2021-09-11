@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'farhanmustar.ml';
+  title = 'FARHAN MUSTAR';
+  title_initial = 'F';
+  title_first_line = 'ARHAN';
+  title_second_line = 'MUSTAR';
+  ngOnInit(): void {
+  }
 }

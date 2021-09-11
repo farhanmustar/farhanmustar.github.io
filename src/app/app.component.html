@@ -1,24 +1,28 @@
 <div class="app">
   <div class="app-header">
-    <mat-toolbar color="secondary" class="app-toolbar">
-      <button mat-icon-button aria-label="Main Menu" matTooltip="Main Menu" (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>{{ title }}</span>
-      <span class="app-toolbar-spacer"></span>
-      <button mat-icon-button class="account-button" aria-label="Info">
-        <mat-icon>info</mat-icon>
-      </button>
-    </mat-toolbar>
+    <nav class="uk-navbar-container uk-animation-slide-top-small" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active">
+                <a class="site-title" routerLink="">
+                  <span class="site-initial">{{ title_initial }}</span>
+                  {{ title_first_line }}
+                  <br/>&nbsp;
+                  {{ title_second_line }}
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <a routerLink="info" uk-tooltip="title: info; pos: bottom; delay: 300" class="site-navbar-text">
+              <span uk-icon="info"></span>
+            </a>
+          </ul>
+        </div>
+    </nav>
   </div>
   <div class="app-content">
-    <mat-drawer-container hasBackdrop="true" class="app-drawer">
-      <mat-drawer #drawer mode="over" class="app-main-menu"><app-main-menu></app-main-menu></mat-drawer>
-      <mat-drawer-content>
-        <router-outlet></router-outlet>
-      </mat-drawer-content>
-    </mat-drawer-container>
+    <router-outlet></router-outlet>
   </div>
-  <!-- <div class="app-footer"> -->
-  <!-- </div> -->
 </div>
