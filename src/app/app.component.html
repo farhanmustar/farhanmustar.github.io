@@ -1,6 +1,6 @@
 <div class="app">
   <div class="app-header">
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <nav class="uk-navbar-container uk-animation-slide-top-small" uk-navbar>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
               <li class="uk-active">
@@ -14,29 +14,15 @@
             </ul>
         </div>
         <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-parent">
-                  <a href="" class="site-navbar-text">Blogs</a>
-                  <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                  </div>
-                </li>
-            </ul>
-            <ul class="uk-navbar-nav">
-              <a routerLink="info" class="site-navbar-text">
-                <span uk-icon="info"></span>
-              </a>
-            </ul>
+          <ul class="uk-navbar-nav">
+            <a routerLink="info" uk-tooltip="title: info; pos: bottom; delay: 300" class="site-navbar-text">
+              <span uk-icon="info"></span>
+            </a>
+          </ul>
         </div>
     </nav>
   </div>
   <div class="app-content">
     <router-outlet></router-outlet>
   </div>
-  <!-- <div class="app-footer"> -->
-  <!-- </div> -->
 </div>
