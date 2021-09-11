@@ -3,4 +3,59 @@
 }
 .uk-comment {
   max-width: 900px;
+  width: 85%;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%)translateY(-20%);
+  border-radius: 30px;
+  border-color: #48484894;
+  border-style: solid hidden hidden;
+  border-width: 46px;
+
+  .uk-comment-body {
+    text-align: justify;
+  }
+}
+
+.contact-list a {
+  padding: 0px 7px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  position: absolute;
+  top: -26px;
+  background: #484848;
+  &.close {
+    right: 26px;
+  }
+  &.mini {
+    right: 50px;
+  }
+  &.full {
+    right: 74px;
+  }
+}
+
+@keyframes panning {
+  0% {
+    background-position: 0em 0em;
+  }
+  100% {
+    background-position: 3em 3em;
+  }
+}
+.back {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  width: 100%;
+  height: calc(100% - 80px);
+  background-image: linear-gradient(#fbfbfb .1em, transparent .1em), linear-gradient(90deg, #fbfbfb .1em, transparent .1em), radial-gradient(at top left, #e8e8e8 .1em, transparent .1em);
+  background-size: 3em 3em;
+  animation: panning 4s infinite linear;
 }
