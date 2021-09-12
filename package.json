@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "ng build --prod --output-path docs",
+    "release": "ng run farhanmustar-github-io:prerender:release",
     "dev:ssr": "ng run farhanmustar-github-io:serve-ssr",
     "serve:ssr": "node dist/farhanmustar-github-io/server/main.js",
     "build:ssr": "ng build --prod && ng run farhanmustar-github-io:server:production",
