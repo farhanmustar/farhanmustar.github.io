@@ -13,12 +13,14 @@ import { MatCardModule } from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { InfoComponent } from './info/info.component';
+import { PolicyComponent } from './policy/policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    InfoComponent
+    InfoComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
